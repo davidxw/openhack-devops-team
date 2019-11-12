@@ -28,7 +28,7 @@ namespace poi.Controllers
         public IActionResult Get()
         {
             _logger.LogInformation(LoggingEvents.Healthcheck, "Healthcheck Requested");
-            var hc = new HealthCheck();
+            var hc = new Healthcheck();
             hc.Status = "Unhealthy";
             return Ok(hc);
         }
