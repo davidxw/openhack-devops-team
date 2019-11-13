@@ -29,7 +29,8 @@ namespace poi.Controllers
         {
             _logger.LogInformation(LoggingEvents.Healthcheck, "Healthcheck Requested");
             var hc = new Healthcheck();
-            hc.Status = "Unhealthy";
+            //hc.Status = "Unhealthy";
+            hc.Status = "Healthy";
             return Ok(hc);
         }
     }
